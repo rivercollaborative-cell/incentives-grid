@@ -972,3 +972,9 @@ function CarIcon() {
     </svg>
   );
 }
+
+<script>
+  document.querySelectorAll('a').forEach(link => {
+    link.setAttribute('target', '_top');
+  });
+</script>
