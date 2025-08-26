@@ -684,7 +684,27 @@ export default function IncentivesGrid() {
     return PROGRAMS.filter((p) => {
       const sectorOk = sector === "All" || p.sectors.includes(sector);
       const stageOk = stage === "All" || p.stages.includes(stage);
-      const sizeOk = size === "All" || p.sizes.includes(size);
+      const normalizedSize = (rawSizes: string[]) => {
+  const ranges = rawSizes.join(" ");
+  if (ranges.includes("Varies")) return ["< $10M", "$10–50M", ">$50M+"];
+  if (ranges.match(/\$?[0-9\.]+[MBK]?\s*–\s*\$?[0-9\.]+[MBK]?/)) {
+    const numbers = ranges.match(/\d+(\.\d+)?/g)?.map(Number) || [];
+    const avg = (numbers[0] + numbers[numbers.length - 1]) / 2;
+    if (avg < 10) return ["< $10M"];
+    if (avg <= 50) return ["$10–50M"];
+    return [">$50M+"];
+  }
+  if (ranges.includes("Up to $")) {
+    const num = parseFloat(ranges.replace(/[^0-9.]/g, ""));
+    if (num < 10) return ["< $10M"];
+    if (num <= 50) return ["$10–50M"];
+    return [">$50M+"];
+  }
+  return ["< $10M", "$10–50M", ">$50M+"];
+};
+
+const sizeOk =
+  size === "All" || normalizedSize(p.sizes).includes(size);
       const text = `${p.program} ${p.country} ${p.type} ${p.headline} ${p.useCase}`.toLowerCase();
       const searchOk = !search.trim() || text.includes(search.toLowerCase());
       return sectorOk && stageOk && sizeOk && searchOk;
