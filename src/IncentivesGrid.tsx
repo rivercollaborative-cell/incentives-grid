@@ -33,7 +33,7 @@ const PROGRAMS = [
   type: "Loan Guarantee Program",
   sectors: ["AgTech", "AI", "EV/AV", "FinTech", "BioTech"],
   stages: ["Startup", "Scale-up", "Enterprise"],
-  sizes: ["Varies"],
+  sizes: ["< $10M"],
   headline: "Loan guarantees to help small businesses secure financing.",
   estValue: "Varied funding; no fixed total investment size.",
   useCase: "Supports access to capital through loan guarantees.",
