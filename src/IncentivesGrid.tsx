@@ -703,8 +703,49 @@ export default function IncentivesGrid() {
   return ["< $10M", "$10–50M", ">$50M+"];
 };
 
-const sizeOk =
-  size === "All" || normalizedSize(p.sizes).includes(size);
+const sizeOk = size === "All" || normalizedSize(p.sizes).includes(size);
+      const normalizedSize = (rawSizes: string[]) => {
+  const buckets = new Set<string>();
+
+  rawSizes.forEach((range) => {
+    if (range === "Varies") {
+      buckets.add("< $10M");
+      buckets.add("$10–50M");
+      buckets.add(">$50M+");
+      return;
+    }
+
+    const match = range.match(/\$?([\d.]+)[MBK]?\s*–\s*\$?([\d.]+)[MBK]?/i);
+    if (match) {
+      const low = parseFloat(match[1]);
+      const high = parseFloat(match[2]);
+      const avg = (low + high) / 2;
+      if (avg < 10) buckets.add("< $10M");
+      else if (avg <= 50) buckets.add("$10–50M");
+      else buckets.add(">$50M+");
+      return;
+    }
+
+    const upToMatch = range.match(/Up to \$([\d.]+)/i);
+    if (upToMatch) {
+      const value = parseFloat(upToMatch[1]);
+      if (value < 10) buckets.add("< $10M");
+      else if (value <= 50) buckets.add("$10–50M");
+      else buckets.add(">$50M+");
+      return;
+    }
+
+    // Fallback: check for any number in the range
+    const num = parseFloat(range.replace(/[^0-9.]/g, ""));
+    if (!isNaN(num)) {
+      if (num < 10) buckets.add("< $10M");
+      else if (num <= 50) buckets.add("$10–50M");
+      else buckets.add(">$50M+");
+    }
+  });
+
+  return Array.from(buckets);
+};
       const text = `${p.program} ${p.country} ${p.type} ${p.headline} ${p.useCase}`.toLowerCase();
       const searchOk = !search.trim() || text.includes(search.toLowerCase());
       return sectorOk && stageOk && sizeOk && searchOk;
