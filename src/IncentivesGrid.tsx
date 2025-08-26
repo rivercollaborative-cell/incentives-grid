@@ -972,9 +972,7 @@ function CarIcon() {
     </svg>
   );
 }
-
-<script>
-  document.querySelectorAll('a').forEach(link => {
-    link.setAttribute('target', '_top');
-  });
-</script>
+// Force all links to open outside iframe
+document.querySelectorAll('a').forEach(link => {
+  link.setAttribute('target', '_top');
+});
