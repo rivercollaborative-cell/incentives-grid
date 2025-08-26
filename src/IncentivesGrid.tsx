@@ -416,21 +416,6 @@ const PROGRAMS = [
 },
 
 {
-  id: "sbirUSsba",
-  program: "SBIR (Small Business Innovation Research) - US SBA",
-  country: "USA",
-  jurisdiction: "USA",
-  type: "Federal R&D Grant",
-  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"],
-  stages: ["Startup", "Scale-up", "Enterprise"],
-  sizes: ["< $10M", "$10–50M"],
-  headline: "US SBA grants for innovative research and development.",
-  estValue: "Funding up to $1.5M; total project size estimated at $15M.",
-  useCase: "Supports innovation in small businesses.",
-  link: "https://www.sbir.gov/about/about-sbir",
-},
-
-{
   id: "sttr",
   program: "STTR (Small Business Technology Transfer)",
   country: "USA",
