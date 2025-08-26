@@ -160,6 +160,21 @@ const PROGRAMS = [
   link: "https://www.nrcan.gc.ca/energy-funding/clean-growth-program/23489",
 },
 
+{ 
+  id: "customizedWorkingCapital", 
+  program: "Customized Working Capital", 
+  country: "Canada", 
+  jurisdiction: "Ontario",
+  type: "Working Capital Financing", 
+  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"], 
+  stages: ["Scale-up", "Enterprise"], 
+  sizes: ["$2.5M–$35M"], 
+  headline: "Working capital loans tailored to business requirements.", 
+  estValue: "Funding between $250K-$35M, estimated project size similar due to nature of working capital.", 
+  useCase: "Supports operational liquidity; assumes working capital equals investment size.", 
+  link: "https://www.investontario.ca/working-capital/", 
+},
+
 {
   id: "detroitBlightRemovalProgram",
   program: "Detroit Blight Removal Program",
@@ -349,6 +364,21 @@ const PROGRAMS = [
   estValue: "Funding varies; no explicit investment size limit.",
   useCase: "Promotes innovation through research collaboration.",
   link: "https://www.mitacs.ca/en/programs/elevate",
+},
+
+{ 
+  id: "neighborhoodBusinessRevitalizationProgram", 
+  program: "Neighborhood Business Revitalization Program", 
+  country: "USA", 
+  jurisdiction: "Detroit Metro", 
+  type: "Business Revitalization Grant", 
+  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech", "Advanced Manufacturing"], 
+  stages: ["Scale-up", "Enterprise"], 
+  sizes: ["Up to $50M", "$0.5M–$5M"], 
+  headline: "Supports revitalization of neighborhood businesses in Detroit.", 
+  estValue: "Grants up to $5M, estimated project size $50M max.", 
+  useCase: "Business growth support with funding assumptions of 10% total project size.", 
+  link: "https://degc.org/neighborhood-business-revitalization-program/", 
 },
 
 {
