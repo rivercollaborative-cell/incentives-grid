@@ -385,8 +385,10 @@ function ProgramCard({ p }: { p: any }) {
   );
 }
 
-function Th({ children }: { children: React.ReactNode }) {
-  return <th className="text-left font-semibold text-gray-700 text-xs uppercase tracking-wide px-4 py-3">{children}</th>;
+function Th({ children }: { children?: React.ReactNode }) {
+  return <th className="text-left font-semibold text-gray-700 text-xs uppercase tracking-wide px-4 py-3">
+    {children}
+  </th>;
 }
 function Td({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return <td className={`px-4 py-3 align-top ${className}`}>{children}</td>;
