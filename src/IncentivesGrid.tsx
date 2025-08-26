@@ -40,21 +40,6 @@ const PROGRAMS = [
   link: "https://www.sba.gov/funding-programs/loans/7a-loans",
 },
 
-  {
-  id: "acceleratedInvestmentIncentive",
-  program: "Accelerated Investment Incentive",
-  country: "Canada",
-  jurisdiction: "Canada",
-  type: "Tax Incentive",
-  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"],
-  stages: ["Startup", "Scale-up", "Enterprise"],
-  sizes: [],
-  headline: "Accelerated capital cost allowance for eligible investments.",
-  estValue: "Varies; no revenue cap.",
-  useCase: "Tax incentive to encourage investment in capital assets.",
-  link: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/capital-cost-allowance-accelerated-investment-incentive.html",
-},
-  
 {
   id: "agriInnovateProgram",
   program: "AgriInnovate Program",
@@ -131,21 +116,6 @@ const PROGRAMS = [
 },
 
 {
-  id: "canadianAgriculturalPartnership",
-  program: "Canadian Agricultural Partnership (CAP)",
-  country: "Canada",
-  jurisdiction: "Canada",
-  type: "Multi-sector Grant & Contribution",
-  sectors: ["AgTech", "BioTech"],
-  stages: ["Startup", "Scale-up", "Enterprise"],
-  sizes: ["Varies"],
-  headline: "Federal-provincial funding to strengthen agriculture sector innovation and competitiveness.",
-  estValue: "Varied funding with no fixed investment size. Flexible revenue limits.",
-  useCase: "Supports diverse agricultural projects; investment size varies widely.",
-  link: "https://agriculture.canada.ca/en/programs/canadian-agricultural-partnership",
-},
-
-  {
   id: "canadaDigitalAdoptionProgram",
   program: "Canada Digital Adoption Program (CDAP)",
   country: "Canada",
@@ -160,21 +130,21 @@ const PROGRAMS = [
   link: "https://ised-isde.canada.ca/site/canada-digital-adoption-program/en",
 },
 
-  {
-  id: "canadaOntarioJobGrant",
-  program: "Canada-Ontario Job Grant",
+{
+  id: "canadianAgriculturalPartnership",
+  program: "Canadian Agricultural Partnership (CAP)",
   country: "Canada",
-  jurisdiction: "Ontario",
-  type: "Workforce Training Grant",
-  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"],
+  jurisdiction: "Canada",
+  type: "Multi-sector Grant & Contribution",
+  sectors: ["AgTech", "BioTech"],
   stages: ["Startup", "Scale-up", "Enterprise"],
   sizes: ["Varies"],
-  headline: "Funds employer-driven employee training programs.",
-  estValue: "Varied funding with no revenue cap.",
-  useCase: "Supports employer investment in workforce development.",
-  link: "https://www.ontario.ca/page/canada-ontario-job-grant",
+  headline: "Federal-provincial funding to strengthen agriculture sector innovation and competitiveness.",
+  estValue: "Varied funding with no fixed investment size. Flexible revenue limits.",
+  useCase: "Supports diverse agricultural projects; investment size varies widely.",
+  link: "https://agriculture.canada.ca/en/programs/canadian-agricultural-partnership",
 },
-  
+
 {
   id: "cleanGrowthProgram",
   program: "Clean Growth Program",
@@ -190,21 +160,6 @@ const PROGRAMS = [
   link: "https://www.nrcan.gc.ca/energy-funding/clean-growth-program/23489",
 },
 
-  {
-  id: "customizedWorkingCapital",
-  program: "Customized Working Capital",
-  country: "Canada",
-  jurisdiction: "Ontario",
-  type: "Working Capital Financing",
-  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"],
-  stages: ["Scale-up", "Enterprise"],
-  sizes: ["$2.5M–$35M"],
-  headline: "Working capital loans tailored to business requirements.",
-  estValue: "Funding between $250K-$35M, estimated project size similar due to nature of working capital.",
-  useCase: "Supports operational liquidity; assumes working capital equals investment size.",
-  link: "https://www.investontario.ca/working-capital/",
-},
-  
 {
   id: "detroitBlightRemovalProgram",
   program: "Detroit Blight Removal Program",
@@ -239,7 +194,7 @@ const PROGRAMS = [
   id: "economicDevelopmentAdministrationGrants",
   program: "Economic Development Administration (EDA) Grants",
   country: "USA",
-  jurisdiction: "USA",
+  jurisdiction: "Federal",
   type: "Economic Development Grants",
   sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"],
   stages: ["Startup", "Scale-up", "Enterprise"],
@@ -265,21 +220,6 @@ const PROGRAMS = [
   link: "https://www.nrcan.gc.ca/science-data/funding-partnerships/funding-opportunities/energy-innovation-program/23016",
 },
 
-  {
-  id: "exportSupportProgram",
-  program: "Export Support Program",
-  country: "Canada",
-  jurisdiction: "Canada",
-  type: "Export Support & Financing",
-  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"],
-  stages: ["Startup", "Scale-up", "Enterprise"],
-  sizes: ["Varies"],
-  headline: "Supports export activities with financing and advisory services.",
-  estValue: "Varies; no fixed investment size.",
-  useCase: "Helps businesses expand export capabilities.",
-  link: "https://www.tradecommissioner.gc.ca/export-support-programs",
-},
-  
 {
   id: "fedDevOntarioBusinessScaleupProductivityProgram",
   program: "FedDev Ontario Business Scale-up and Productivity Program",
@@ -310,21 +250,6 @@ const PROGRAMS = [
   link: "https://www.feddevontario.ca/page/innovation-programming",
 },
 
-  {
-  id: "industryClusterDevelopmentFund",
-  program: "Industry Cluster Development Fund",
-  country: "USA",
-  jurisdiction: "Michigan",
-  type: "Industry Development Grant",
-  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech", "Advanced Manufacturing"],
-  stages: ["Scale-up", "Enterprise"],
-  sizes: ["Up to $100M", "$1M–$10M"],
-  headline: "Supports growth and collaboration of industry clusters in Michigan.",
-  estValue: "Funding up to $10M, estimated total project size up to $100M.",
-  useCase: "Promotes industry cluster growth. Assumes 10% funding share.",
-  link: "https://www.michiganbusiness.org/mid/industry-cluster-development-fund/",
-},
-  
 {
   id: "innovativeSolutionsCanada",
   program: "Innovative Solutions Canada (ISC)",
@@ -355,36 +280,6 @@ const PROGRAMS = [
   link: "https://www.investontario.ca/investment-fund/",
 },
 
-  {
-  id: "michiganBusinessDevelopmentProgram",
-  program: "Michigan Business Development Program (MBDP)",
-  country: "USA",
-  jurisdiction: "Michigan",
-  type: "Business Development Incentive",
-  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech", "Advanced Manufacturing"],
-  stages: ["Scale-up", "Enterprise"],
-  sizes: ["Up to $100M", "$1M–$10M"],
-  headline: "Incentives for business investment and job creation in Michigan.",
-  estValue: "Funding up to $10M, estimated total investment up to $100M.",
-  useCase: "Supports business expansion and job creation. Assumes ~10% funding share.",
-  link: "https://www.michiganbusiness.org/mid/michigan-business-development-program/",
-},
-
-{
-  id: "michiganStrategicFund",
-  program: "Michigan Strategic Fund (MSF)",
-  country: "USA",
-  jurisdiction: "Michigan",
-  type: "Economic Development Fund",
-  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech", "Advanced Manufacturing"],
-  stages: ["Scale-up", "Enterprise"],
-  sizes: ["Up to $100M", "$1M–$10M"],
-  headline: "Funds business investments that create jobs and grow the economy.",
-  estValue: "Funding up to $10M, total investment estimated at $100M.",
-  useCase: "Supports strategic economic development initiatives.",
-  link: "https://www.michiganbusiness.org/mid/michigan-strategic-fund/",
-},
-  
 {
   id: "mitacsAccelerateProgram",
   program: "Mitacs Accelerate Program",
@@ -430,21 +325,6 @@ const PROGRAMS = [
   link: "https://www.mitacs.ca/en/programs/elevate",
 },
 
-  {
-  id: "neighborhoodBusinessRevitalizationProgram",
-  program: "Neighborhood Business Revitalization Program",
-  country: "USA",
-  jurisdiction: "Detroit Metro",
-  type: "Business Revitalization Grant",
-  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech", "Advanced Manufacturing"],
-  stages: ["Scale-up", "Enterprise"],
-  sizes: ["Up to $50M", "$0.5M–$5M"],
-  headline: "Supports revitalization of neighborhood businesses in Detroit.",
-  estValue: "Grants up to $5M, estimated project size $50M max.",
-  useCase: "Business growth support with funding assumptions of 10% total project size.",
-  link: "https://degc.org/neighborhood-business-revitalization-program/",
-},
-  
 {
   id: "ociCollaborativeResearchDevelopmentFund",
   program: "OCI Collaborative Research & Development Fund",
@@ -505,36 +385,6 @@ const PROGRAMS = [
   link: "https://www.ontario.ca/page/ontario-together-trade-fund",
 },
 
-  {
-  id: "siteReadinessProgram",
-  program: "Site Readiness Program",
-  country: "Canada",
-  jurisdiction: "Ontario",
-  type: "Infrastructure Preparation Funding",
-  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"],
-  stages: ["Startup", "Scale-up", "Enterprise"],
-  sizes: ["Up to $25K"],
-  headline: "Supports site preparation for industrial and commercial development.",
-  estValue: "Funding up to $25K; no total investment cap.",
-  useCase: "Facilitates access to ready business sites.",
-  link: "https://www.ontario.ca/page/site-readiness-program",
-},
-  
-  {
-  id: "skillsDevelopmentFund",
-  program: "Skills Development Fund",
-  country: "Canada",
-  jurisdiction: "Ontario",
-  type: "Workforce Training Funding",
-  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"],
-  stages: ["Startup", "Scale-up", "Enterprise"],
-  sizes: ["Varies"],
-  headline: "Funding to support workforce skill training and development.",
-  estValue: "Varied funding with no revenue cap.",
-  useCase: "Supports employee training programs.",
-  link: "https://www.ontario.ca/page/skills-development-fund",
-},
-  
 {
   id: "sredTaxIncentiveInvestOntario",
   program: "SR&ED Tax Incentive",
@@ -548,12 +398,28 @@ const PROGRAMS = [
   estValue: "No revenue cap; tax credits based on eligible R&D spending.",
   useCase: "Encourages innovation via tax incentives.",
   link: "https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program.html",
+},
+
+{
+  id: "sbir",
+  program: "SBIR (Small Business Innovation Research)",
+  country: "USA",
+  jurisdiction: "Federal",
+  type: "Federal R&D Grant",
+  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"],
+  stages: ["Startup", "Scale-up", "Enterprise"],
+  sizes: ["Up to $15M"],
+  headline: "Federal grants supporting innovative R&D for small businesses.",
+  estValue: "Funding up to $1.5M; estimated total project size up to $15M.",
+  useCase: "Supports early-stage innovation with government funding.",
+  link: "https://www.sbir.gov/about/about-sbir",
+},
 
 {
   id: "sbirUSsba",
   program: "SBIR (Small Business Innovation Research) - US SBA",
   country: "USA",
-  jurisdiction: "USA",
+  jurisdiction: "Federal",
   type: "Federal R&D Grant",
   sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"],
   stages: ["Startup", "Scale-up", "Enterprise"],
@@ -565,17 +431,17 @@ const PROGRAMS = [
 },
 
 {
-  id: "sttrUSsba",
-  program: "STTR (Small Business Technology Transfer) - US SBA",
+  id: "sttr",
+  program: "STTR (Small Business Technology Transfer)",
   country: "USA",
-  jurisdiction: "USA",
+  jurisdiction: "Federal",
   type: "Federal R&D Grant",
   sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"],
   stages: ["Startup", "Scale-up", "Enterprise"],
   sizes: ["Up to $15M"],
-  headline: "US SBA grants to facilitate technology transfer research.",
+  headline: "Federal grants supporting technology transfer research.",
   estValue: "Funding up to $1.5M; estimated project size up to $15M.",
-  useCase: "Encourages research collaboration.",
+  useCase: "Encourages collaboration between small businesses and research institutions.",
   link: "https://www.sbir.gov/about/about-sttr",
 },
 
@@ -594,21 +460,6 @@ const PROGRAMS = [
   link: "https://www.ic.gc.ca/eic/site/125.nsf/eng/home",
 },
 
-  {
-  id: "tradeCommissionerExportMarketDiversification",
-  program: "Trade Commissioner Export Market Diversification",
-  country: "Canada",
-  jurisdiction: "Canada",
-  type: "Export Support",
-  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"],
-  stages: ["Startup", "Scale-up", "Enterprise"],
-  sizes: [],
-  headline: "Supports Canadian businesses expanding to new international markets.",
-  estValue: "No direct funding; advisory and support services.",
-  useCase: "Helps companies diversify export markets.",
-  link: "https://www.tradecommissioner.gc.ca/",
-},
-  
 {
   id: "wayneCountySmallBusinessRecoveryGrant",
   program: "Wayne County Small Business Recovery Grant",
@@ -622,21 +473,6 @@ const PROGRAMS = [
   estValue: "Funding up to $5M, estimated total investment size up to $50M.",
   useCase: "Helps businesses recover post-disruption; assumes 10% funding share.",
   link: "https://www.waynecounty.com/business/grants.aspx",
-},
-
-  {
-  id: "workforceDevelopmentStream",
-  program: "Workforce Development Stream",
-  country: "Canada",
-  jurisdiction: "Ontario",
-  type: "Workforce Development Funding",
-  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"],
-  stages: ["Startup", "Scale-up", "Enterprise"],
-  sizes: ["Varies"],
-  headline: "Supports workforce training to meet evolving business needs.",
-  estValue: "Varied funding with no revenue cap.",
-  useCase: "Helps improve employee skills and productivity.",
-  link: "https://www.ontario.ca/page/workforce-development-stream",
 },
 ];
 
@@ -684,68 +520,7 @@ export default function IncentivesGrid() {
     return PROGRAMS.filter((p) => {
       const sectorOk = sector === "All" || p.sectors.includes(sector);
       const stageOk = stage === "All" || p.stages.includes(stage);
-      const normalizedSize = (rawSizes: string[]) => {
-  const ranges = rawSizes.join(" ");
-  if (ranges.includes("Varies")) return ["< $10M", "$10–50M", ">$50M+"];
-  if (ranges.match(/\$?[0-9\.]+[MBK]?\s*–\s*\$?[0-9\.]+[MBK]?/)) {
-    const numbers = ranges.match(/\d+(\.\d+)?/g)?.map(Number) || [];
-    const avg = (numbers[0] + numbers[numbers.length - 1]) / 2;
-    if (avg < 10) return ["< $10M"];
-    if (avg <= 50) return ["$10–50M"];
-    return [">$50M+"];
-  }
-  if (ranges.includes("Up to $")) {
-    const num = parseFloat(ranges.replace(/[^0-9.]/g, ""));
-    if (num < 10) return ["< $10M"];
-    if (num <= 50) return ["$10–50M"];
-    return [">$50M+"];
-  }
-  return ["< $10M", "$10–50M", ">$50M+"];
-};
-
-const sizeOk = size === "All" || normalizedSize(p.sizes).includes(size);
-      const normalizedSize = (rawSizes: string[]) => {
-  const buckets = new Set<string>();
-
-  rawSizes.forEach((range) => {
-    if (range === "Varies") {
-      buckets.add("< $10M");
-      buckets.add("$10–50M");
-      buckets.add(">$50M+");
-      return;
-    }
-
-    const match = range.match(/\$?([\d.]+)[MBK]?\s*–\s*\$?([\d.]+)[MBK]?/i);
-    if (match) {
-      const low = parseFloat(match[1]);
-      const high = parseFloat(match[2]);
-      const avg = (low + high) / 2;
-      if (avg < 10) buckets.add("< $10M");
-      else if (avg <= 50) buckets.add("$10–50M");
-      else buckets.add(">$50M+");
-      return;
-    }
-
-    const upToMatch = range.match(/Up to \$([\d.]+)/i);
-    if (upToMatch) {
-      const value = parseFloat(upToMatch[1]);
-      if (value < 10) buckets.add("< $10M");
-      else if (value <= 50) buckets.add("$10–50M");
-      else buckets.add(">$50M+");
-      return;
-    }
-
-    // Fallback: check for any number in the range
-    const num = parseFloat(range.replace(/[^0-9.]/g, ""));
-    if (!isNaN(num)) {
-      if (num < 10) buckets.add("< $10M");
-      else if (num <= 50) buckets.add("$10–50M");
-      else buckets.add(">$50M+");
-    }
-  });
-
-  return Array.from(buckets);
-};
+      const sizeOk = size === "All" || p.sizes.includes(size);
       const text = `${p.program} ${p.country} ${p.type} ${p.headline} ${p.useCase}`.toLowerCase();
       const searchOk = !search.trim() || text.includes(search.toLowerCase());
       return sectorOk && stageOk && sizeOk && searchOk;
