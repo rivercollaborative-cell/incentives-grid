@@ -446,21 +446,6 @@ const PROGRAMS = [
 },
 
 {
-  id: "sttrUSsba",
-  program: "STTR (Small Business Technology Transfer) - US SBA",
-  country: "USA",
-  jurisdiction: "Federal",
-  type: "Federal R&D Grant",
-  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"],
-  stages: ["Startup", "Scale-up", "Enterprise"],
-  sizes: ["Up to $15M"],
-  headline: "US SBA grants to facilitate technology transfer research.",
-  estValue: "Funding up to $1.5M; estimated project size up to $15M.",
-  useCase: "Encourages research collaboration.",
-  link: "https://www.sbir.gov/about/about-sttr",
-},
-
-{
   id: "strategicInnovationFund",
   program: "Strategic Innovation Fund (SIF)",
   country: "Canada",
