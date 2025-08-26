@@ -40,6 +40,21 @@ const PROGRAMS = [
   link: "https://www.sba.gov/funding-programs/loans/7a-loans",
 },
 
+{ 
+  id: "acceleratedInvestmentIncentive", 
+  program: "Accelerated Investment Incentive", 
+  country: "Canada",
+  jurisdiction: "Canada", 
+  type: "Tax Incentive", 
+  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"], 
+  stages: ["Startup", "Scale-up", "Enterprise"], 
+  sizes: [], 
+  headline: "Accelerated capital cost allowance for eligible investments.", 
+  estValue: "Varies; no revenue cap.",
+  useCase: "Tax incentive to encourage investment in capital assets.", 
+  link: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/capital-cost-allowance-accelerated-investment-incentive.html",
+},
+
 {
   id: "agriInnovateProgram",
   program: "AgriInnovate Program",
@@ -143,6 +158,21 @@ const PROGRAMS = [
   estValue: "Grants up to $15K, estimated investment size up to $100K.",
   useCase: "Funding to improve competitiveness via digital adoption.",
   link: "https://ised-isde.canada.ca/site/canada-digital-adoption-program/en",
+},
+
+{ 
+  id: "canadaOntarioJobGrant", 
+  program: "Canada-Ontario Job Grant", 
+  country: "Canada", 
+  jurisdiction: "Ontario", 
+  type: "Workforce Training Grant", 
+  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"], 
+  stages: ["Startup", "Scale-up", "Enterprise"], 
+  sizes: ["Varies"], 
+  headline: "Funds employer-driven employee training programs.", 
+  estValue: "Varied funding with no revenue cap.", 
+  useCase: "Supports employer investment in workforce development.", 
+  link: "https://www.ontario.ca/page/canada-ontario-job-grant", 
 },
 
 {
