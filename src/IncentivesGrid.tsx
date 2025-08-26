@@ -116,21 +116,6 @@ const PROGRAMS = [
 },
 
 {
-  id: "canadaDigitalAdoptionProgram",
-  program: "Canada Digital Adoption Program (CDAP)",
-  country: "Canada",
-  jurisdiction: "Canada",
-  type: "Digital Adoption Grant",
-  sectors: ["AgTech", "EV/AV", "BioTech"],
-  stages: ["Startup", "Scale-up"],
-  sizes: ["Up to $100K"],
-  headline: "Supports small businesses adopting digital technologies.",
-  estValue: "Grants up to $15K, estimated investment size up to $100K.",
-  useCase: "Funding to improve competitiveness via digital adoption.",
-  link: "https://ised-isde.canada.ca/site/canada-digital-adoption-program/en",
-},
-
-{
   id: "canadianAgriculturalPartnership",
   program: "Canadian Agricultural Partnership (CAP)",
   country: "Canada",
@@ -143,6 +128,21 @@ const PROGRAMS = [
   estValue: "Varied funding with no fixed investment size. Flexible revenue limits.",
   useCase: "Supports diverse agricultural projects; investment size varies widely.",
   link: "https://agriculture.canada.ca/en/programs/canadian-agricultural-partnership",
+},
+  
+{
+  id: "canadaDigitalAdoptionProgram",
+  program: "Canada Digital Adoption Program (CDAP)",
+  country: "Canada",
+  jurisdiction: "Canada",
+  type: "Digital Adoption Grant",
+  sectors: ["AgTech", "EV/AV", "BioTech"],
+  stages: ["Startup", "Scale-up"],
+  sizes: ["Up to $100K"],
+  headline: "Supports small businesses adopting digital technologies.",
+  estValue: "Grants up to $15K, estimated investment size up to $100K.",
+  useCase: "Funding to improve competitiveness via digital adoption.",
+  link: "https://ised-isde.canada.ca/site/canada-digital-adoption-program/en",
 },
 
 {
@@ -471,6 +471,22 @@ const PROGRAMS = [
   link: "https://www.ic.gc.ca/eic/site/125.nsf/eng/home",
 },
 
+{ 
+  id: "tradeCommissionerExportMarketDiversification", 
+  program: "Trade Commissioner Export Market Diversification", 
+  country: "Canada",
+  jurisdiction: "Canada",
+  type: "Export Support", 
+  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"], 
+  stages: ["Startup", "Scale-up", "Enterprise"], 
+  sizes: [], 
+  headline: "Supports Canadian businesses expanding to new international markets.",
+  estValue: "No direct funding; advisory and support services.", 
+  useCase: "Helps companies diversify export markets.", 
+  link: "https://www.tradecommissioner.gc.ca/", 
+},
+
+  
 {
   id: "wayneCountySmallBusinessRecoveryGrant",
   program: "Wayne County Small Business Recovery Grant",
@@ -485,6 +501,22 @@ const PROGRAMS = [
   useCase: "Helps businesses recover post-disruption; assumes 10% funding share.",
   link: "https://www.waynecounty.com/business/grants.aspx",
 },
+
+{ 
+  id: "workforceDevelopmentStream", 
+  program: "Workforce Development Stream",
+  country: "Canada", 
+  jurisdiction: "Ontario", 
+  type: "Workforce Development Funding", 
+  sectors: ["AgTech", "EV/AV", "FinTech", "BioTech"], 
+  stages: ["Startup", "Scale-up", "Enterprise"], 
+  sizes: ["Varies"], 
+  headline: "Supports workforce training to meet evolving business needs.", 
+  estValue: "Varied funding with no revenue cap.", 
+  useCase: "Helps improve employee skills and productivity.", 
+  link: "https://www.ontario.ca/page/workforce-development-stream", 
+},
+
 ];
 
 const NARRATIVES = [
