@@ -534,7 +534,7 @@ export default function IncentivesGrid() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
-              One Region, Dual Advantage
+              One Region, Twice the Power
             </h1>
             <p className="mt-3 text-lg">
               Maximize R&D in <span className="font-semibold">Canada</span>,
@@ -561,7 +561,7 @@ export default function IncentivesGrid() {
                 options={["All", ...ALL_SECTORS]}
               />
               <Select
-                label="Investment Size"
+                label="Total Investment Size"
                 value={size}
                 onChange={setSize}
                 options={["All", ...ALL_SIZES]}
