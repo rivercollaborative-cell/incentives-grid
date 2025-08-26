@@ -1,6 +1,7 @@
 import React from 'react';
-import IncentivesGrid from './IncentivesGrid';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './index.css';
 
-export default function App() {
-  return <IncentivesGrid />;
-}
+const root = ReactDOM.createRoot(document.getElementById('root')!);
+root.render(<App />);
